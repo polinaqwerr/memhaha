@@ -6,8 +6,49 @@ body {
     height: 100vh;
     background-image: 
     url(./images/minimalist-forest-river-art-1-4k.jpg);
+   
 }
-#root img {
-    
+
+#root img{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    animation-name: ghost;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes ghost {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 50%;
+        left: calc(100% - 512px );
+    }
+    50%{
+        top: 50%;
+        bottom: calc(100% - 512px);
+
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 }
